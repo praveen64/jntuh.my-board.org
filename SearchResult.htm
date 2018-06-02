@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0111)http://epayments.jntuh.ac.in/results/jsp/SearchResult.jsp -->
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+ 
+<SCRIPT>
+function capitalizeMe(element) {
+element.value = element.value.toUpperCase();
+}
+</SCRIPT>
+ 
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<STYLE>
+
+.ui-datepicker {
+width: 15em;
+padding: .2em .2em 0;
+display: none;
+background: #818484;
+}
+.ui-datepicker .ui-datepicker-title {
+margin: 0 2.3em;
+line-height: 1.2em;
+text-align: center;
+color:#FFFFFF;
+background:#2F99B4;
+}
+.ui-datepicker table {
+width: 70%;
+font-size: .5em;
+border-collapse: collapse;
+font-family: sans-serif;
+margin: 0 0 .4em;
+color:#000000;
+background:#9EEFEE;
+}
+/*This is date TD */
+.ui-datepicker td {
+ 
+border: 0;
+padding: 1px;
+ 
+ 
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+display: block;
+padding: .8em;
+text-align: right;
+text-decoration: underline;
+}
+
+table {
+	float: center;
+	border-color: black;
+	-webkit-border-radius: 25px;
+}
+
+</STYLE>
+ <TITLE>RESULTS</TITLE> <LINK href="results_files/SearchResult_files/jquery-ui.css" rel="stylesheet"> 
+<LINK href="MyStyle.css" rel="stylesheet" type="text/css"> 
+<SCRIPT src="results_files/SearchResult_files/jquery.min.js"></SCRIPT>
+ 
+<SCRIPT src="results_files/SearchResult_files/jquery-ui.min.js"></SCRIPT>
+ 
+<SCRIPT src="results_files/SearchResult_files/resultsearch.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="results_files/SearchResult_files/fkeys.js" type="text/javascript"></SCRIPT>
+     
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY oncontextmenu="return false" onload="DrawCaptcha();">
+<FORM name="searchResult" id="myForm" onsubmit="return formvalidation()" action="epayments.jntuh.ac.in_files/home.php" 
+method="POST"><BR><BR><BR>
+<DIV align="center" class="CommentBox"><INPUT name="degree" type="hidden" value="btech">
+					 <INPUT name="examCode" type="hidden" value="1235">					 <INPUT name="etype" type="hidden" value="r16">
+					 <INPUT name="result" type="hidden" value="gradercrv">					 <INPUT name="grad" type="hidden" value="null">
+					 <INPUT name="type" type="hidden" value="null">										 <!-- <label color="green">Degree:</label>
+					
+					 <select name='degree'
+						onchange="getExamsList(this.value)">
+							<option value="-1">Select</option> 
+							<option value="btech">B.Tech</option>
+							<option value="bpharmacy">B.Pharmacy</option> 
+							</select> -->
+					 <BR><BR><FONT color="red">
+<DIV id="une"></DIV></FONT>
+<TABLE style="border-style: outset; border-color: black; width: 55%; height: 55%; text-align: left; background-color: rgb(208, 228, 254);">
+  													 
+  <TBODY>
+  <TR>
+    <TD>Enter HallTicket Number</TD>
+    <TD><INPUT name="search" id="htno" required="required" onkeyup="capitalizeMe(this);" type="text" min="1" max="10">
+      					 
+    <TD>
+      <DIV style="color: rgb(255, 0, 0);"></DIV></TD>
+    <TD></TR>
+  <TR>
+    <TD>Enter Date of Birth</TD>
+    <TD><INPUT id="datepicker" required="" type="text"></TD>
+    <TD>YYYY/MM/DD</TD>
+  <TR>
+  <TR>
+    <TD>Please enter this Captcha code in below TextBox<BR></TD>
+    <TD><INPUT disabled="disabled" id="txtCaptcha" style="text-align: center; color: rgb(78, 32, 22); font-family: Modern; font-weight: bold;" type="text"></TD>
+    <TD><INPUT id="btnrefresh" onclick="DrawCaptcha();" type="button" value="Refresh"><BR></TD></TR>
+  <TR>
+    <TD></TD>
+    <TD><INPUT id="txtInput" required="required" type="text">					 
+    <TD><INPUT type="submit" value="Submit"><BR></TD><!-- <td><input id="Button1" type="button" value="Check"
+						onclick="ValidCaptcha();"/><br /></td> -->
+    				 </TR></TBODY></TABLE><BR></DIV><!-- <input type="hidden" name="examCode"/> -->
+	 </FORM></BODY></HTML>

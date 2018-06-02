@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0051)http://epayments.jntuh.ac.in/results/jsp/header.jsp -->
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+  
+<SCRIPT language="JavaScript">
+
+ document.onkeypress = function (event) {
+     event = (event || window.event);
+     if (event.keyCode == 123) {
+        //alert('No F-12');
+         return false;
+     }
+ }
+ document.onmousedown = function (event) {
+     event = (event || window.event);
+     if (event.keyCode == 123) {
+         //alert('No F-keys');
+         return false;
+     }
+ }
+document.onkeydown = function (event) {
+     event = (event || window.event);
+     if (event.keyCode == 123) {
+         //alert('No F-keys');
+         return false;
+     }
+ }
+ 
+function clickIE() {if (document.all) {(message);return false;}} 
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) { 
+if (e.which==2||e.which==3) {(message);return false;}}} 
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;} 
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
+document.oncontextmenu=new Function("return false"); 
+</SCRIPT>
+ 
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD>
+<BODY oncontextmenu="return false">
+<P align="center"><IMG style="width: 1280px; height: 120px;" src="header_files/jntu_oldnow.gif"></P><TITLE>JAWAHARLAL 
+NEHRU TECHNOLOGICAL UNIVERSITY</TITLE> 
+<SCRIPT src="header_files/fkeys.js" type="text/javascript"></SCRIPT>
+ </BODY></HTML>
